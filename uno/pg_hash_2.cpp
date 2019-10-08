@@ -13,7 +13,6 @@ bool solution(vector<string> phone_book) {
 		if (phone_book[i] == phone_book[i + 1].substr(0, phone_book[i].size()))
 			answer = false;
 	}
-
 	return answer;
 }
 
