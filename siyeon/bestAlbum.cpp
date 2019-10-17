@@ -10,19 +10,14 @@
 using namespace std;
 
 bool compareGenres(const pair<string, int> &p1, const pair<string, int> &p2){
-    if(p1.second > p2.second)
-        return true;
-    else
-        return false;
+    return p1.second > p2.second;
 }
 
 bool comparePlays(const pair<int, int> &p1, const pair <int, int> &p2){
-    if(p1.second > p2.second) {
-        return true;
-    } else if(p1.second == p2.second){
+   if(p1.second == p2.second)
         return p1.first < p2.first;
-    } else
-        return false;
+
+   return p1.second > p2.second;
 }
 
 vector<int> solution(vector<string> genres, vector<int> plays) {
